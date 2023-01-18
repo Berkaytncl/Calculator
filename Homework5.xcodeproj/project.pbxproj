@@ -13,6 +13,7 @@
 		EB6574EA2977464500279676 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB6574E82977464500279676 /* Main.storyboard */; };
 		EB6574EC2977464600279676 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB6574EB2977464600279676 /* Assets.xcassets */; };
 		EB6574EF2977464600279676 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB6574ED2977464600279676 /* LaunchScreen.storyboard */; };
+		EB6574FB297774C500279676 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6574FA297774C500279676 /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EB6574EB2977464600279676 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB6574EE2977464600279676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB6574F02977464600279676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB6574FA297774C500279676 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		EB6574E12977464500279676 /* Homework5 */ = {
 			isa = PBXGroup;
 			children = (
+				EB6574F92977749200279676 /* Models */,
 				EB6574E22977464500279676 /* AppDelegate.swift */,
 				EB6574E42977464500279676 /* SceneDelegate.swift */,
 				EB6574E62977464500279676 /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				EB6574F02977464600279676 /* Info.plist */,
 			);
 			path = Homework5;
+			sourceTree = "<group>";
+		};
+		EB6574F92977749200279676 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EB6574FA297774C500279676 /* Calculator.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			files = (
 				EB6574E72977464500279676 /* ViewController.swift in Sources */,
 				EB6574E32977464500279676 /* AppDelegate.swift in Sources */,
+				EB6574FB297774C500279676 /* Calculator.swift in Sources */,
 				EB6574E52977464500279676 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,9 +302,11 @@
 				DEVELOPMENT_TEAM = 8VZXPVXH33;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Homework5/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Calculator;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,9 +332,11 @@
 				DEVELOPMENT_TEAM = 8VZXPVXH33;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Homework5/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Calculator;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
