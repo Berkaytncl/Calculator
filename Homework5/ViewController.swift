@@ -35,6 +35,7 @@ final class ViewController: UIViewController {
         
         configureStackViewHeights()
         configureButtonsRadius()
+        configureCalculatorLabel()
     }
     
     @IBAction func numPressed(_ sender: UIButton) {
@@ -125,6 +126,7 @@ extension ViewController {
         } else {
             calculationLabel.text = "\(temp2)"
         }
+        saveLastestCalculatorLabel()
     }
     
     func clearButtonSetLabel(str: String) {
@@ -149,6 +151,18 @@ extension ViewController {
         setPlusButtonJustPressed(isPressed: false)
         calculator.equalJustPressed = false
         calculator.dotPressed = false
+    }
+    
+    func configureCalculatorLabel() {
+        guard let lastestNumber = UserDefaults.standard.string(forKey: "lastestNumber") else { return }
+        guard let doubleTemp = Double(lastestNumber) else { return }
+        let intTemp = Int(doubleTemp)
+        if doubleTemp > Double(intTemp) { calculator.dotPressed = true }
+        calculationLabel.text = lastestNumber
+    }
+    
+    func saveLastestCalculatorLabel() {
+        UserDefaults.standard.set(calculationLabel.text, forKey: "lastestNumber")
     }
     
     func configureStackViewHeights() {
