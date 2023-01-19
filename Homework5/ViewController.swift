@@ -119,7 +119,7 @@ extension ViewController {
     func refreshCalculationLabel(number: String) {
         guard let temp = Double(number) else { return }
         let temp2 = Int(temp)
-        if temp > Double(temp2) {
+        if abs(temp) > abs(Double(temp2)) {
             let roundedValue = round(temp * 1000) / 1000.0
             calculationLabel.text = "\(roundedValue)"
         } else {
