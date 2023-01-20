@@ -102,12 +102,15 @@ final class ViewController: UIViewController {
             
             if calculator.plusJustPressed == true {
                 setPlusButtonJustPressed(isPressed: false)
+                calculator.equalJustPressed = false
             } else if calculator.equalJustPressed == true {
                 calculatorAllClear()
             } else {
                 calculationLabel.text = "\(calculationLabel.text!)."
                 break
             }
+            
+            
             calculationLabel.text = "0."
         default:
             break

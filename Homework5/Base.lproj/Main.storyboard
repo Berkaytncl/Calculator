@@ -16,6 +16,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="BSJ-nh-vT2">
+                                <rect key="frame" x="16" y="300" width="382" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUB-Qv-OEH">
+                                        <rect key="frame" x="0.0" y="0.0" width="86.5" height="90"/>
+                                        <color key="backgroundColor" name="secondaryOperationColor"/>
+                                        <color key="tintColor" name="secondaryColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="AC">
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="40"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="operationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ia5-wN-quC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8F-Vr-zAQ">
+                                        <rect key="frame" x="98.5" y="0.0" width="86.5" height="90"/>
+                                        <color key="backgroundColor" name="secondaryOperationColor"/>
+                                        <color key="tintColor" name="secondaryColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="+/-">
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="40"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="operationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HKV-Dt-bNS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="-2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRg-aL-2IF">
+                                        <rect key="frame" x="197" y="0.0" width="86.5" height="90"/>
+                                        <color key="backgroundColor" name="secondaryOperationColor"/>
+                                        <color key="tintColor" name="secondaryColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="%">
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="40"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="operationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TFs-Ig-YV7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" tag="-2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tq5-KE-ki7">
+                                        <rect key="frame" x="295.5" y="0.0" width="86.5" height="90"/>
+                                        <color key="backgroundColor" name="primaryOperationColor"/>
+                                        <color key="tintColor" name="primaryColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="÷">
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="40"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="operationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cTE-oI-0ch"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Tn5-Cq-hpt"/>
+                                </constraints>
+                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="gjo-4c-yl3">
                                 <rect key="frame" x="16" y="406" width="382" height="90"/>
                                 <subviews>
@@ -55,16 +111,16 @@
                                             <action selector="numPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tfx-qS-Q3k"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUB-Qv-OEH">
+                                    <button opaque="NO" clipsSubviews="YES" tag="-2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJC-lF-63N">
                                         <rect key="frame" x="295.5" y="0.0" width="86.5" height="90"/>
-                                        <color key="backgroundColor" name="secondaryOperationColor"/>
-                                        <color key="tintColor" name="secondaryColor"/>
+                                        <color key="backgroundColor" name="primaryOperationColor"/>
+                                        <color key="tintColor" name="primaryColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="AC">
+                                        <buttonConfiguration key="configuration" style="plain" title="x">
                                             <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="40"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="operationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ia5-wN-quC"/>
+                                            <action selector="operationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dbt-t4-3Rq"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -111,16 +167,16 @@
                                             <action selector="numPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gkX-k1-zeq"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8F-Vr-zAQ">
+                                    <button opaque="NO" clipsSubviews="YES" tag="-2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7s3-yO-7iQ">
                                         <rect key="frame" x="295.5" y="0.0" width="86.5" height="90"/>
-                                        <color key="backgroundColor" name="secondaryOperationColor"/>
-                                        <color key="tintColor" name="secondaryColor"/>
+                                        <color key="backgroundColor" name="primaryOperationColor"/>
+                                        <color key="tintColor" name="primaryColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="+/-">
+                                        <buttonConfiguration key="configuration" style="plain" title="-">
                                             <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="40"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="operationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HKV-Dt-bNS"/>
+                                            <action selector="operationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WxS-AN-a0r"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -234,8 +290,8 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hph-ch-Zdy">
-                                <rect key="frame" x="32" y="198" width="350" height="176"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <rect key="frame" x="32" y="190.5" width="350" height="101.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="85"/>
                                 <color key="textColor" name="primaryColor"/>
                                 <color key="highlightedColor" name="secondaryColor"/>
                             </label>
@@ -243,15 +299,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="secondaryColor"/>
                         <constraints>
-                            <constraint firstItem="Hph-ch-Zdy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="7GQ-0B-iE8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BSJ-nh-vT2" secondAttribute="trailing" constant="16" id="6Sj-wK-f5E"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hph-ch-Zdy" secondAttribute="trailing" constant="32" id="9F6-Fy-jBm"/>
+                            <constraint firstItem="gjo-4c-yl3" firstAttribute="top" secondItem="BSJ-nh-vT2" secondAttribute="bottom" constant="16" id="G6N-b6-hDE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gjo-4c-yl3" secondAttribute="trailing" constant="16" id="JYv-ET-i8x"/>
                             <constraint firstItem="Hph-ch-Zdy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="KR0-gh-Kfs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qaz-kK-CC6" secondAttribute="trailing" constant="16" id="LaM-et-jQ7"/>
-                            <constraint firstItem="gjo-4c-yl3" firstAttribute="top" secondItem="Hph-ch-Zdy" secondAttribute="bottom" constant="32" id="Vrl-it-gnE"/>
+                            <constraint firstItem="BSJ-nh-vT2" firstAttribute="top" secondItem="Hph-ch-Zdy" secondAttribute="bottom" constant="8" id="THA-Ax-Mht"/>
                             <constraint firstItem="gjo-4c-yl3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ZgW-9X-LDj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MRg-o5-kKm" secondAttribute="trailing" constant="16" id="a5v-4x-tv7"/>
                             <constraint firstItem="MRg-o5-kKm" firstAttribute="top" secondItem="qaz-kK-CC6" secondAttribute="bottom" constant="16" id="bP9-2k-SlE"/>
+                            <constraint firstItem="BSJ-nh-vT2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="brU-QS-lFU"/>
                             <constraint firstItem="mZF-AZ-dGF" firstAttribute="top" secondItem="MRg-o5-kKm" secondAttribute="bottom" constant="16" id="hn8-Ys-CzC"/>
                             <constraint firstItem="MRg-o5-kKm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ka8-rv-M3h"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mZF-AZ-dGF" secondAttribute="bottom" constant="48" id="l1S-66-tw1"/>
@@ -279,11 +337,15 @@
                         <outletCollection property="buttons" destination="lJa-rf-v2A" collectionClass="NSMutableArray" id="E17-tw-U2I"/>
                         <outletCollection property="buttons" destination="Pq1-rk-Bpw" collectionClass="NSMutableArray" id="XtL-pI-cpq"/>
                         <outletCollection property="buttons" destination="LGe-EY-HTp" collectionClass="NSMutableArray" id="eq8-zr-4hJ"/>
-                        <outletCollection property="buttons" destination="w8F-Vr-zAQ" collectionClass="NSMutableArray" id="52K-Gk-354"/>
                         <outletCollection property="buttons" destination="rIb-eJ-hGt" collectionClass="NSMutableArray" id="nAe-NR-gl8"/>
                         <outletCollection property="buttons" destination="3LK-YY-EVl" collectionClass="NSMutableArray" id="olt-MH-6fL"/>
                         <outletCollection property="buttons" destination="5WH-Ib-1pO" collectionClass="NSMutableArray" id="Wo1-W1-fzc"/>
                         <outletCollection property="buttons" destination="lUB-Qv-OEH" collectionClass="NSMutableArray" id="aLh-U5-axx"/>
+                        <outletCollection property="buttons" destination="w8F-Vr-zAQ" collectionClass="NSMutableArray" id="52K-Gk-354"/>
+                        <outletCollection property="buttons" destination="gRg-aL-2IF" collectionClass="NSMutableArray" id="JND-Hj-DgT"/>
+                        <outletCollection property="buttons" destination="Tq5-KE-ki7" collectionClass="NSMutableArray" id="Okn-Mj-3lD"/>
+                        <outletCollection property="buttons" destination="7s3-yO-7iQ" collectionClass="NSMutableArray" id="VX9-W7-a3q"/>
+                        <outletCollection property="buttons" destination="MJC-lF-63N" collectionClass="NSMutableArray" id="9uM-my-xCQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
