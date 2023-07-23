@@ -1,4 +1,4 @@
-# TechcareeriOSBootcampHw5
+# Calculator
 
 I made a limited feature version of the calculator app on the App Store
 
